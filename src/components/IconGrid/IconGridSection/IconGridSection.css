@@ -1,0 +1,107 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-in-with-delay {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.iconGridSection {
+    width: 100%;
+    padding: 50px 0px 60px 0px;
+}
+
+.contentWrapper {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1330px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.iconGridSection h2 {
+    color: #210f6f;
+    margin: 0px 50px 0px 50px;
+    height: 100%;
+    width: 255px;
+    min-width: 255px;
+    max-width: 255px;
+    font-family: 'ProximaNova-Reg';
+    font-size: 2.65em;
+    text-align: center;
+    display: inline-flex;
+    vertical-align: top;
+    order: 1;
+    flex-basis: auto;
+    flex-grow: 1;
+    user-select: none;
+    cursor: default;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+.icons {
+    order: 2;
+    margin: 0px 0px 0px 0px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-basis: auto;
+    flex-grow: 99;
+    animation-name: fade-in-with-delay;
+    animation-duration: 1.25s;
+}
+
+@media (max-width: 1300px) {
+
+    .contentWrapper {
+        flex-wrap: wrap;
+    }
+
+    .iconGridSection h2 {
+        display: block;
+        width: 100%;
+        margin: 0px;
+        max-width: none;
+    }
+
+    .icons {
+        margin: 25px 0px 0px 0px;
+        display: flex;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .iconGridSection {
+        padding: 35px 0px 10px 0px;
+    }
+
+    .icons {
+        margin: 5px 0px 0px 0px;
+        display: flex;
+    }
+
+}

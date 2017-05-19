@@ -1,0 +1,262 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-with-delay {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.contactForm {
+
+}
+
+.contactFormHeader {
+    background-color: #210f6f;
+    padding: 35px 0px;
+}
+
+.contentWrapper {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1330px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.contactFormHeader h1 {
+    color: white;
+    margin: 0px 50px 0px 50px;
+    height: 100%;
+    width: 255px;
+    min-width: 255px;
+    max-width: 255px;
+    font-size: 3.0em;
+    text-align: center;
+    display: inline-flex;
+    vertical-align: top;
+    order: 1;
+    flex-basis: auto;
+    flex-grow: 1;
+    user-select: none;
+    cursor: default;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+.contactFormHeader h2 {
+    color: white;
+    order: 2;
+    font-size: 2.0em;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    flex-basis: auto;
+    flex-grow: 99;
+    animation-name: fade-in-with-delay;
+    animation-duration: 1.25s;
+}
+
+.contactFormBody {
+    background-color: white;
+    padding: 3em 0px;
+}
+
+.contactFormBody .contentWrapper {
+    flex-wrap: wrap;
+}
+
+.formGroup {
+    flex-basis: 450px;
+    padding: 0px 50px;
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.full {
+    flex-basis: 100%;
+}
+
+.right {
+    padding-left: 0px;
+}
+
+.contactFormBody label {
+    font-family: 'ProximaNova-Reg';
+    font-size: 1.6em;
+    color: #210f6f;
+    display: block;
+    margin: 1em 0px;
+    animation-name: fade-in-with-delay;
+    animation-duration: 1.25s;
+    transition: color 0.2s;
+}
+
+.contactFormBody label.invalid {
+    color: red;
+}
+
+.contactFormBody input {
+    font-family: 'ProximaNova-Light';
+    display: block;
+    font-size: 1.3em;
+    width: calc(100% - 20px);
+    padding: 0.7em 10px;
+    border-radius: 3px;
+    border-color: #c0c0c0;
+    border-style: solid;
+    border-width: 1px;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+.contactFormBody textarea {
+    font-family: 'ProximaNova-Light';
+    display: block;
+    font-size: 1.1em;
+    width: calc(100% - 20px);
+    height: 120px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    border-color: #c0c0c0;
+    border-style: solid;
+    border-width: 1px;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+.contactFormBody button {
+    background-color: #210f6f;
+    color: white;
+    border-radius: 3px;
+    border-width: 0px;
+    margin: 15px 20px 0px 0px;
+    padding: 0.7em 75px;
+    font-size: 1.6em;
+    animation-name: fade-in-with-delay;
+    animation-duration: 1.25s;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contactFormBody button:hover {
+    background-color: #3C00B3;
+}
+
+.contactFormBody button:active {
+    background-color: #6232c2;
+}
+
+.contactFormBody button.disabled {
+    background-color: #63579a;
+}
+
+.contactFormBody button.disabled:hover {
+    background-color: #63579a;
+}
+
+.contactFormBody button.disabled:active {
+    background-color: #63579a;
+}
+
+.loader {
+    border: 0.3em solid #f3f3f3; /* Light grey */
+    border-top: 0.3em solid #63579a; /* Blue */
+    border-radius: 50%;
+    width: 1.9em;
+    height: 1.9em;
+    margin: 21px 0px 0px 0px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+.contactFormBody span {
+    color: #210f6f;
+    margin: 1em 0px 0px 0px;
+    padding: 10px 0px;
+    font-size: 1.6em;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contactFormBody span.error {
+    color: red;
+}
+
+.contactFormBody h3 {
+    display: block;
+    color: red;
+    font-size: 1.6em;
+    margin-top: 1em;
+}
+
+.contactFormBody li {
+    display: block;
+    color: red;
+    font-size: 1.3em;
+    margin-top: 3px;
+}
+
+@media (max-width: 1300px) {
+
+    .contactFormHeader {
+        padding: 35px 0px;
+    }
+
+    .contactFormHeader h1 {
+        display: none;
+    }
+
+    .contactFormHeader h2 {
+        margin: 0px 50px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    .right {
+        padding-left: 50px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .contactFormHeader {
+        padding: 15px 0px;
+    }
+
+    .formGroup {
+        padding: 0px 25px;
+    }
+
+}

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "lib": ["dom", "es2015", "es2016", "es2017"],
+        "jsx": "preserve",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noEmitOnError": false,
+        "noImplicitAny": false,
+        "preserveConstEnums": true,
+        "removeComments": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "es2016",
+        "experimentalDecorators": true
+        
+    },
+    "files": [
+        "./src/index.tsx"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

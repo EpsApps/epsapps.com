@@ -1,0 +1,52 @@
+.iconGridIcon {
+    width: 9.5em;
+    padding: 5px 0px;
+    margin: 0px 0.5em;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    animation-name: iconEnter;
+}
+
+.imageContainer {
+    height: 9.5em;
+    width: 9.5em;
+    position: relative;
+}
+
+.iconGridIcon svg {
+    position: absolute;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*rotate(0deg);*/
+    width: 7em;
+    height: 7em;
+    max-width: 7em;
+    max-height: 7em;
+}
+
+.iconGridIcon:hover svg {
+    transform: translate(-50%, -50%); /*rotate(360deg);*/
+    width: 7em;
+    height: 7em;
+    max-width: 7em;
+    max-height: 7em;
+}
+
+.iconGridIcon svg circle {
+    transition: stroke 0.5s;
+}
+
+.iconGridIcon svg path {
+    transition: fill 0.5s;
+}
+
+.iconGridIcon h3 {
+    padding: 10px 0px;
+    text-align: center;
+    font-family: 'ProximaNova-Reg';
+    font-size: 1.5em;
+    user-select: none;
+    cursor: pointer;
+}
